@@ -18,10 +18,16 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  background:#150E28;
+  color: #FFFFFF;
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+}
+h1{
+  color: #D434FE;
+  font-size: x-large;
 }
