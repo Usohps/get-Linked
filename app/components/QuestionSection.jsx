@@ -8,7 +8,7 @@ import Image from "next/image";
 import Lightbulb from "@/assets/The big idea.png";
 import Image1 from "@/assets/Image 1.png";
 import Vector1 from "@/assets/Vector 4.png";
-import Title from "@/assets/title.png";
+import Title from "@/assets/Title.png";
 import Countdown from "@/assets/Countdown time.png";
 import Star from "@/assets/star pu.png"
 function QuestionSection() {
