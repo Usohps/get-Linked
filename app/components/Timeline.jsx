@@ -1,5 +1,6 @@
 import React from "react";
-
+import Image from "next/image";
+import Star from "@/assets/star pu.png"
 function Timeline() {
   return (
     <div className=" container m-auto  space-y-1 py-12 pl-4 md:pl-0">
@@ -13,7 +14,8 @@ function Timeline() {
       <div className="relative  flex md:container flex-col md:flex-row md:items-center justify-center">
         <div className="flex">
           <div className="flex flex-row-reverse md:flex-row md:w-[400px] m-auto">
-            <div className="space-y-4 p-8">
+            <div className="space-y-4 p-8 relative">
+            <Image src={Star} className="absolute top-0 left-[0] " />
               <h1>Hackathon Announcement</h1>
               <p className="py-4 ">
                 The getlinked tech hackathon 1.0 is formally announced to the
@@ -76,6 +78,7 @@ function Timeline() {
         </div>
         <div className=" w-[400px] pl-6 md:p-8 absolute left-10 bottom-2 md:bottom-0 md:left-0 md:relative">
           <h1>November 18, 2023</h1>
+          <Image src={Star} className="absolute top-0 right-[0] md:left-0 " />
         </div>
       </div>
 
@@ -147,6 +150,7 @@ function Timeline() {
           <h1>November 18, 2023</h1>
         </div>
       </div>
+      
     </div>
   );
 }

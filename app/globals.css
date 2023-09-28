@@ -31,3 +31,12 @@ h1{
   color: #D434FE;
   font-size: x-large;
 }
+span{
+  color: #D434FE;
+}
+nav{
+  background-color: #150E28;
+}
+p{
+  line-height: 40px;
+}

@@ -4,7 +4,7 @@ import Logo from "@/assets/getlinked.png";
 import Star from "@/assets/star (1).png"
 import Star2 from "@/assets/sata gra.png"
 import Star3 from "@/assets/star.png"
-import Link from "next/link";
+// import Link from "next/link";
 import {FaXTwitter} from "react-icons/fa6"
 import {TiSocialFacebook} from "react-icons/ti"
 import {CiLocationOn} from "react-icons/ci";
@@ -18,7 +18,7 @@ function Footer() {
           <div className="">
             <Image src={Logo} className="p-4" />
             <Image src={Star} className="absolute top-10 left-5 " />
-            <p>
+            <p className="text-sm">
               Getlinked Tech Hackathon is a technology innovation program
               established by a group of organizations with the aim of showcasing
               young and talented individuals in the field of technology
@@ -29,14 +29,14 @@ function Footer() {
             <div className=" md:border-l-2 pl-2"> Private Policy</div>
           </div>
         </div>
-        <div className="md:w-1/3 text-center w-full">
-          <span>Useful links</span>
+        <div className="md:w-1/3 text-center w-full text-sm">
+          <p>Useful links</p>
           <p>Overview</p>
           <p>Timeline</p>
           <p>FAQs</p>
           <p>Register</p>
           <div className="flex md:w-[70%]  md:pl-24 pl-32 m-auto text-center items-center justify-center">
-            <span>Follow Us</span>
+            <p>Follow Us</p>
             <div className="flex gap-4 p-2 text-center  pl-2">
               <AiOutlineInstagram className="w-[20px]"/>
               <FaXTwitter/>
@@ -45,8 +45,8 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="md:w-1/3 space-y-4 text-center w-full">
-          <span>Contact Us</span>
+        <div className="md:w-1/3 space-y-4 text-center text-sm w-full">
+          <p>Contact Us</p>
           <div className="flex gap-2 items-center justify-center">
           <FiPhoneCall />
             <p>+234 679 81819</p>
