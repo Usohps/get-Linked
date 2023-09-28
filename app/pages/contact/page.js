@@ -8,8 +8,8 @@ function ContactPage() {
   return (
     <div className="container  m-auto my-32">
       <div className=" flex items-center  p-6 justify-between">
-        <Image src={Star} />
-        <Image src={Star} />
+        <Image src={Star} alt="star" />
+        <Image src={Star} alt="star" />
       </div>
       <div className="flex flex-col-reverse md:flex-row items-center justify-between">
         <div className="text-center">

@@ -12,7 +12,7 @@ function Reward() {
       <div>
         <div className=" container m-auto p-4 flex md:justify-between flex-col md:flex-row ">
           <div>
-            <Image src={Star} className="" />
+            <Image src={Star} alt="star" className="" />
           </div>
           <div className=" w-full text-center   relative md:max-w-[500px] md:m-auto p-4 ">
             <p>Prices and</p>
@@ -29,11 +29,13 @@ function Reward() {
             src={Trophy}
             className="md:w-[370px] p-4 md:p-0 container z-30"
             placeholder="blur"
+            alt="trophy"
           />
           <Image
             src={Rewards}
             className="md:w-[370px] container z-30"
             placeholder="blur"
+            alt="rewards"
           />
         </div>
       </div>
@@ -50,6 +52,7 @@ function Reward() {
             src={SponsorsImg}
             className="md:w-[500px] container"
             placeholder="blur"
+            alt="sponsor"
           />
         </div>
       </section>
@@ -78,11 +81,12 @@ function Reward() {
           </div>
         </div>
 
-        <div className="max-w-[500px] relative p-4 flex items-center justify-center relative">
-          <Image src={Vector} className="w-[400px]" />
+        <div className="max-w-[500px] relative p-4 flex items-center justify-center">
+          <Image src={Vector} className="w-[400px]" alt="vector" />
           <Image
             src={Padlockboy}
             className="w-[300px] absolute top-[30%] left-[5%]"
+            alt="padlockboy"
           />
         </div>
       </section>

@@ -16,8 +16,8 @@ function Footer() {
       <div className="w-full space-y-6 gap-2 flex flex-col items-center justify-between md:flex-row">
         <div className="md:w-1/2 lg:w-1/3 flex flex-col items-center justify-center p-4 w-full">
           <div className="">
-            <Image src={Logo} className="p-4" />
-            <Image src={Star} className="absolute top-10 left-5 " />
+            <Image src={Logo} alt="logo" className="p-4" />
+            <Image src={Star} alt="star" className="absolute top-10 left-5 " />
             <p className="text-sm">
               Getlinked Tech Hackathon is a technology innovation program
               established by a group of organizations with the aim of showcasing
@@ -58,13 +58,13 @@ function Footer() {
         </div>
       </div>
       <div className="w-full p-8 text-center">
-      <Image src={Star2} className="absolute w-[15px] md:bottom-28 bottom-[15%] left-[50%] " />
+      <Image src={Star2} alt="star" className="absolute w-[15px] md:bottom-28 bottom-[15%] left-[50%] " />
         <p>
           All right reserved @ getLinked Ltd. Designed and Developed by CozyDev
         </p>
       </div>
-      <Image src={Star} className="absolute bottom-28 right-[10%] " />
-      <Image src={Star3} className="absolute w-[10px] md:top-28 top-[52%] right-[30%] " />
+      <Image src={Star} alt="star" className="absolute bottom-28 right-[10%] " />
+      <Image src={Star3} alt="star" className="absolute w-[10px] md:top-28 top-[52%] right-[30%] " />
     </div>
   );
 }

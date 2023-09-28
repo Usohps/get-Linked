@@ -12,15 +12,15 @@ function RegisterPage() {
   return (
     <div className="container min-h-screen m-auto flex md:flex-row flex-col text-white mt-32  justify-between items-center">
       <div className=" md:w-1/2 w-full flex flex-col items-center justify-center">
-        <Image src={Register_hero} className="w-[250px] md:w-[350px]" />
+        <Image src={Register_hero} alt="registerhero_img" className="w-[250px] md:w-[350px]" />
       </div>
       <div className="shadow-3xl ">
         <h1 className="text-4xl text-[#D434FE] font-semibold">Register</h1>
         <div className="flex items-center p-6">
           <p className="">Be part of this movement</p>
           <div className=" border-b-[1.5px] border-[#D434FE] border-dashed flex items-center justify-center">
-            <Image src={Girl_icon} />
-            <Image src={Boy_icon} />
+            <Image src={Girl_icon} alt="girl" />
+            <Image src={Boy_icon} alt="boy" />
           </div>
         </div>
         <div className="text-center">
