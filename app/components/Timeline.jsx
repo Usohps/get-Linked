@@ -30,7 +30,7 @@ function Timeline() {
             </div>
           </div>
         </div>
-        <div className="  w-[400px] pl-6  md:p-8 absolute left-10 bottom-0 md:bottom-0 md:left-0 md:relative">
+        <div className="  max-w-[400px] pl-6  md:p-8 absolute left-10 bottom-0 md:bottom-0 md:left-0 md:relative">
           <h1>November 18, 2023</h1>
         </div>
       </div>
@@ -53,7 +53,7 @@ function Timeline() {
             </div>
           </div>
         </div>
-        <div className=" w-[400px] pl-6 md:p-8 absolute left-10 bottom-2 md:bottom-0 md:left-0 md:relative">
+        <div className=" max-w-[400px] pl-6 md:p-8 absolute left-10 bottom-2 md:bottom-0 md:left-0 md:relative">
           <h1>November 18, 2023</h1>
         </div>
       </div>
@@ -76,9 +76,9 @@ function Timeline() {
             </div>
           </div>
         </div>
-        <div className=" w-[400px] pl-6 md:p-8 absolute left-10 bottom-2 md:bottom-0 md:left-0 md:relative">
+        <div className=" max-w-[400px] pl-6 md:p-8 absolute left-10 bottom-2 md:bottom-0 md:left-0 md:relative">
           <h1>November 18, 2023</h1>
-          <Image src={Star} className="absolute top-0 right-[0] md:left-0 " />
+          <Image src={Star} alt="star" className="absolute top-0 right-[0] md:left-0 " />
         </div>
       </div>
 
@@ -100,7 +100,7 @@ function Timeline() {
             </div>
           </div>
         </div>
-        <div className=" w-[400px] pl-6 md:p-8 absolute left-10 bottom-2 md:bottom-0 md:left-0 md:relative">
+        <div className=" max-w-[400px] pl-6 md:p-8 absolute left-10 bottom-2 md:bottom-0 md:left-0 md:relative">
           <h1>November 18, 2023</h1>
         </div>
       </div>
@@ -123,7 +123,7 @@ function Timeline() {
             </div>
           </div>
         </div>
-        <div className=" w-[400px] pl-6 md:p-8 absolute left-10 bottom-2 md:bottom-0 md:left-0 md:relative">
+        <div className=" max-w-[400px] pl-6 md:p-8 absolute left-10 bottom-2 md:bottom-0 md:left-0 md:relative">
           <h1>November 18, 2023</h1>
         </div>
       </div>
@@ -146,7 +146,7 @@ function Timeline() {
             </div>
           </div>
         </div>
-        <div className=" w-[400px] pl-6 md:p-8 absolute  left-10 bottom-2 md:bottom-0 md:left-0 md:relative">
+        <div className=" max-w-[400px] pl-6 md:p-8 absolute  left-10 bottom-2 md:bottom-0 md:left-0 md:relative">
           <h1>November 18, 2023</h1>
         </div>
       </div>

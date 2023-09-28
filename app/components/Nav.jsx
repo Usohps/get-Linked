@@ -9,7 +9,7 @@ function Nav() {
   const [navbar, setNavbar] = useState(false);
   return (
     <>
-      <nav className=" flex w-full fixed top-0 shadow-2xl z-[50] justify-between items-center p-8 text-white">
+      <nav className=" flex w-full border fixed top-0 left-0 shadow-2xl z-[50] justify-between items-center p-8 text-white">
         <div className="w-1/3">
           <Image src={Logo} alt="logo" placeholder="blur" className="w-[100px]" />
         </div>
@@ -50,12 +50,12 @@ function Nav() {
           <div
             className={
               navbar
-                ? " w-full h-full md:hidden flex justify-center text-sm items-center fixed top-[0] backdrop-blur-sm animation  left-0 from-transparent to-[#253D62]"
-                : "md:hidden w-full h-full flex justify-center text-sm items-center fixed top-[0] backdrop-blur-sm  animation  left-[100%] from-transparent to-[#253D62]"
+                ? " w-full h-full md:hidden flex justify-center text-sm items-center fixed top-[0] backdrop-blur-sm animation right-0 "
+                : "md:hidden w-full h-full flex justify-center text-sm items-center fixed top-[0] backdrop-blur-sm  animation right-[100%] "
             }
           >
-            <div className="flex flex-col ease-in-out translate-x-10 justify-center m-auto rounded-xl  shadow-2xl shadow-slate-900 bg-gradient-to-r from-blue-950 to-purple-900  font-bold">
-              <ul className="w-[300px] text-white h-[300px] m-auto flex flex-col justify-center items-center text-sm space-y-4">
+            <div className=" flex border w-[300px] flex-col ease-in-out  justify-center items-center rounded-xl m-auto  shadow-2xl shadow-slate-900 bg-gradient-to-r from-blue-950 to-purple-900  font-bold">
+              <ul className=" w-full border md:max-w-[300px] text-white h-[300px] flex flex-col justify-center items-center text-sm space-y-4">
                 <li>
                   <Link href={"/"} onClick={() => setNavbar(!navbar)}>
                     Home
