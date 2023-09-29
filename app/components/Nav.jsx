@@ -56,40 +56,40 @@ function Nav() {
           >
             <div className=" flex w-[300px] flex-col ease-in-out  justify-center items-center rounded-xl m-auto  shadow-2xl shadow-slate-900 bg-gradient-to-r from-blue-950 to-purple-900  font-bold">
               <ul className=" w-full  md:max-w-[300px] text-white h-[300px] flex flex-col justify-center items-center text-sm space-y-4">
-                <button onClick={() => setNavbar(!navbar)}>
-                  <Link href={"/"}>
+                <li>
+                  <Link href={"/"} onClick={() => setNavbar(!navbar)}>
                     Home
                   </Link>
-                </button>
-                <button onClick={() => setNavbar(!navbar)}>
-                  <Link href={"/"}>
+                </li>
+                <li>
+                  <Link href={"/"} onClick={() => setNavbar(!navbar)}>
                     Timelines
                   </Link>
-                </button>
-                <button onClick={() => setNavbar(!navbar)}>
-                  <Link href={"/"}>
+                </li>
+                <li>
+                  <Link href={"/"} onClick={() => setNavbar(!navbar)}>
                     Overview
                   </Link>
-                </button>
-                <button onClick={() => setNavbar(!navbar)}>
-                  <Link href={"/"}>
+                </li>
+                <li>
+                  <Link href={"/"} onClick={() => setNavbar(!navbar)}>
                     FAQs
                   </Link>
-                </button>
-                {/* <button onClick={() => setNavbar(!navbar)}> */}
-                  <Link href={"/pages/contact"}>
+                </li>
+                <li>
+                  <Link onClick={() => setNavbar(!navbar)} href={"/pages/contact"}>
                     Contact
                   </Link>
-                {/* </button> */}
+                </li>
                 <li>
-                  <button onClick={() => setNavbar(!navbar)} className="w-[102px] text-sm text-center rounded font-semibold bg-gradient-to-r from-[#D434FE] to-[#903AFF]">
+                  <div className="w-[102px] text-sm text-center rounded font-semibold bg-gradient-to-r from-[#D434FE] to-[#903AFF]">
                     <Link
-                      href={"/register"}
-                      
+                      href={"/pages/register"}
+                      onClick={() => setNavbar(!navbar)}
                     >
                       <p>Register</p> 
                     </Link>
-                  </button>
+                  </div>
                 </li>
               </ul>
             </div>
