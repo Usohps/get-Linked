@@ -76,11 +76,11 @@ function Nav() {
                     FAQs
                   </Link>
                 </button>
-                <button onClick={() => setNavbar(!navbar)}>
+                {/* <button onClick={() => setNavbar(!navbar)}> */}
                   <Link href={"/contact"}>
                     Contact
                   </Link>
-                </button>
+                {/* </button> */}
                 <li>
                   <button onClick={() => setNavbar(!navbar)} className="w-[102px] text-sm text-center rounded font-semibold bg-gradient-to-r from-[#D434FE] to-[#903AFF]">
                     <Link
