@@ -9,7 +9,7 @@ function Nav() {
   const [navbar, setNavbar] = useState(false);
   return (
     <>
-      <nav className=" flex w-full border fixed top-0 left-0 shadow-2xl z-[50] justify-between items-center p-8 text-white">
+      <nav className=" flex w-full fixed top-0 left-0 shadow-2xl z-[20] justify-between items-center p-8 text-white">
         <div className="w-1/3">
           <Image src={Logo} alt="logo" placeholder="blur" className="w-[100px]" />
         </div>
@@ -27,12 +27,12 @@ function Nav() {
             <Link href={"/"}>
               <p>FAQs</p>
             </Link>
-            <Link href={"/pages/contact"}>
+            <Link href={"/contact"}>
               <p>Contact</p>
             </Link>
           </div>
           <div className="w-[172px] text-center p-2 rounded font-semibold bg-gradient-to-r from-[#D434FE] to-[#903AFF]">
-            <Link href={"/pages/register"}>
+            <Link href={"/register"}>
               <p>Register</p>
             </Link>
           </div>
@@ -54,42 +54,42 @@ function Nav() {
                 : "md:hidden w-full h-full flex justify-center text-sm items-center fixed top-[0] backdrop-blur-sm  animation right-[100%] "
             }
           >
-            <div className=" flex border w-[300px] flex-col ease-in-out  justify-center items-center rounded-xl m-auto  shadow-2xl shadow-slate-900 bg-gradient-to-r from-blue-950 to-purple-900  font-bold">
-              <ul className=" w-full border md:max-w-[300px] text-white h-[300px] flex flex-col justify-center items-center text-sm space-y-4">
-                <li>
-                  <Link href={"/"} onClick={() => setNavbar(!navbar)}>
+            <div className=" flex w-[300px] flex-col ease-in-out  justify-center items-center rounded-xl m-auto  shadow-2xl shadow-slate-900 bg-gradient-to-r from-blue-950 to-purple-900  font-bold">
+              <ul className=" w-full  md:max-w-[300px] text-white h-[300px] flex flex-col justify-center items-center text-sm space-y-4">
+                <button onClick={() => setNavbar(!navbar)}>
+                  <Link href={"/"}>
                     Home
                   </Link>
-                </li>
-                <li>
-                  <Link href={"/"} onClick={() => setNavbar(!navbar)}>
+                </button>
+                <button onClick={() => setNavbar(!navbar)}>
+                  <Link href={"/"}>
                     Timelines
                   </Link>
-                </li>
-                <li>
-                  <Link href={"/"} onClick={() => setNavbar(!navbar)}>
+                </button>
+                <button onClick={() => setNavbar(!navbar)}>
+                  <Link href={"/"}>
                     Overview
                   </Link>
-                </li>
-                <li>
-                  <Link href={"/"} onClick={() => setNavbar(!navbar)}>
+                </button>
+                <button onClick={() => setNavbar(!navbar)}>
+                  <Link href={"/"}>
                     FAQs
                   </Link>
-                </li>
-                <li>
+                </button>
+                <button onClick={() => setNavbar(!navbar)}>
                   <Link href={"/contact"}>
                     Contact
                   </Link>
-                </li>
+                </button>
                 <li>
-                  <div className="w-[102px] text-sm text-center rounded font-semibold bg-gradient-to-r from-[#D434FE] to-[#903AFF]">
+                  <button onClick={() => setNavbar(!navbar)} className="w-[102px] text-sm text-center rounded font-semibold bg-gradient-to-r from-[#D434FE] to-[#903AFF]">
                     <Link
                       href={"/register"}
-                      onClick={() => setNavbar(!navbar)}
+                      
                     >
                       <p>Register</p> 
                     </Link>
-                  </div>
+                  </button>
                 </li>
               </ul>
             </div>

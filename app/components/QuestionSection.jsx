@@ -14,7 +14,7 @@ import Star from "@/assets/star pu.png"
 function QuestionSection() {
   return (
     <>
-      <div className="w-full md:text-end text-center py-32 italic p-12 text-xl  relative">
+      <div className="w-full z-10 md:text-end text-center py-32 italic p-12 text-xl  relative">
         <p className="py-2">Igniting a Revolution in HR Innovation</p>
         <Image
           src={Vector1}
