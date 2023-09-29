@@ -77,7 +77,7 @@ function Nav() {
                   </Link>
                 </button>
                 {/* <button onClick={() => setNavbar(!navbar)}> */}
-                  <Link href={"/contact"}>
+                  <Link href={"/pages/contact"}>
                     Contact
                   </Link>
                 {/* </button> */}
