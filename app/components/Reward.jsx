@@ -27,13 +27,13 @@ function Reward() {
         <div className=" w-full m-auto space-y-7 flex flex-col md:flex-row  justify-center items-center p-4">
           <Image
             src={Trophy}
-            className="md:w-[370px] p-4 md:p-0 container z-30"
+            className="md:w-[370px] w-[240px] p-4 md:p-0 container z-10"
             placeholder="blur"
             alt="trophy"
           />
           <Image
             src={Rewards}
-            className="md:w-[370px] container z-30"
+            className="md:w-[370px] w-[240px] container z-10"
             placeholder="blur"
             alt="rewards"
           />

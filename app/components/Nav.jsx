@@ -27,12 +27,12 @@ function Nav() {
             <Link href={"/"}>
               <p>FAQs</p>
             </Link>
-            <Link href={"/contact"}>
+            <Link href={"/pages/contact"}>
               <p>Contact</p>
             </Link>
           </div>
           <div className="w-[172px] text-center p-2 rounded font-semibold bg-gradient-to-r from-[#D434FE] to-[#903AFF]">
-            <Link href={"/register"}>
+            <Link href={"/pages/register"}>
               <p>Register</p>
             </Link>
           </div>
@@ -84,8 +84,8 @@ function Nav() {
                 <li>
                   <div className="w-[102px] text-sm text-center rounded font-semibold bg-gradient-to-r from-[#D434FE] to-[#903AFF]">
                     <Link
-                      href={"/pages/register"}
                       onClick={() => setNavbar(!navbar)}
+                      href={"/pages/register"}
                     >
                       <p>Register</p> 
                     </Link>
