@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import axios from "axios";
 import React from "react";
 import Star from "@/assets/star pu.png";
@@ -14,11 +14,14 @@ export const metadata = {
 };
 function ContactPage() {
   const [showModal, setShowModal] = useState(false)
-
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [message, setMessage] = useState("");
   const handleSubmit = async(req, res)=> {
     try {
       const response = await axios.post(postUrl, {
-        teamName,phone,email,projectTopic,category,privacy
+        teamName,phone,email,message,teamName
       });
       console.log(response.data)
       setShowModal(true)
@@ -64,6 +67,8 @@ function ContactPage() {
               <div className="w-full space-y-8">
                 <div className="">
                   <input
+                  value={firstName}
+                  onChange={(e)=>{setFirstName(e.target.value)}}
                     type="text"
                     placeholder="Enter the name of your group"
                     className="rounded w-full p-2 bg-transparent border  text-black outline-none "
@@ -71,14 +76,25 @@ function ContactPage() {
                 </div>
                 <div>
                   <input
+                   value={phone}
+                   onChange={(e)=>{setPhone(e.target.value)}}
                     type="text"
                     placeholder="Enter your phone number"
                     className="rounded p-2 w-full bg-transparent border text-black outline-none "
                   />
                 </div>
+                <div>
+                  <input
+                   value={email}
+                   onChange={(e)=>{setEmail(e.target.value)}}
+                    type="text"
+                    placeholder="Enter your Email"
+                    className="rounded p-2 w-full bg-transparent border text-black outline-none "
+                  />
+                </div>
               </div>
               <div className="w-full">
-                <textarea className="outline-none rounded w-full h-[200px] bg-transparent border text-black"></textarea>
+                <textarea onChange={(e)=>{setMessage(e.target.value)}} className="outline-none rounded w-full h-[200px] bg-transparent border text-black"></textarea>
               </div>
             </div>
             <div className="flex items-center justify-center">
