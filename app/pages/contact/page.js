@@ -11,8 +11,7 @@ import { useState } from "react";
 function ContactPage() {
   const [showModal, setShowModal] = useState(false);
   async function postData(formData) {
-    const apiUrl = `${process.env.BASE_URL}/hackathon/contact-form`; // Replace with your external endpoint URL
-
+    const apiUrl = `${process.env.BASE_URL}/hackathon/contact-form`; 
     try {
       const response = await axios.post(apiUrl, formData, {
         headers: {
@@ -20,14 +19,13 @@ function ContactPage() {
           // Add any other headers you need
         },
       });
-
       // Handle a successful response here
       console.log("Request was successful!", response.data);
-      if(response.data.id !==""){
+      if (response.data.status === 200) {
         setShowModal(true);
-        console.log("hi")
+        console.log("hi");
       }
-      return
+      return;
     } catch (error) {
       // Handle errors here
       console.error("Request failed:", error);
