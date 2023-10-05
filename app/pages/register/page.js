@@ -40,7 +40,7 @@ function RegisterPage() {
         },
       });
       console.log("Request was successful!", response.data);
-      if (response.data.status === 200) {
+      if (response.status === 201) {
         setShowModal(true);
       }
     } catch (error) {
@@ -65,9 +65,9 @@ function RegisterPage() {
       console.log(error);
     }
   };
-  const closeModal = () => {
-    setShowModal(!showModal);
-  };
+  // const closeModal = () => {
+  //   setShowModal(!showModal);
+  // };
   return (
     <div className="container min-h-screen m-auto flex md:flex-row flex-col text-white mt-32  justify-between items-center">
       <div className=" md:w-1/2 w-full flex flex-col items-center justify-center">

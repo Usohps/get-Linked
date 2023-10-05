@@ -20,8 +20,8 @@ function ContactPage() {
         },
       });
       // Handle a successful response here
-      console.log("Request was successful!", response.data);
-      if (response.data.status === 200) {
+      console.log("Request was successful!", response);
+      if (response.status === 201) {
         setShowModal(true);
         console.log("hi");
       }
