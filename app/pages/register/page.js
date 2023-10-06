@@ -16,6 +16,7 @@ function RegisterPage() {
   const [size,setSize]= useState("")
   const [privacy, setPrivacy] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  // const [error,setError]= useState("")
   // console.log({privacy,topic,email,selectedOption,size});
   useEffect(() => {
     // Define your API endpoint URL, BASE_URL is defined in next.config.js
@@ -45,6 +46,7 @@ function RegisterPage() {
       }
     } catch (error) {
       console.log("here is ", error);
+      // setError(error.message)
     }
   }
   const handleSubmit = async (e) => {
@@ -65,9 +67,9 @@ function RegisterPage() {
       console.log(error);
     }
   };
-  // const closeModal = () => {
-  //   setShowModal(!showModal);
-  // };
+  const closeModal = () => {
+    setShowModal(!showModal);
+  };
   return (
     <div className="container min-h-screen m-auto flex md:flex-row flex-col text-white mt-32  justify-between items-center">
       <div className=" md:w-1/2 w-full flex flex-col items-center justify-center">
@@ -210,6 +212,7 @@ function RegisterPage() {
           <button className="w-[172px] text-center p-2 rounded font-semibold bg-gradient-to-r from-[#D434FE] to-[#903AFF]">
             Register Now
           </button>
+          {/* {error ? <p>{setError}</p>: ""} */}
           {showModal && <Success closeModal={closeModal} />}
         </form>
       </div>
