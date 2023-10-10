@@ -16,7 +16,7 @@ function RegisterPage() {
   const [size,setSize]= useState("")
   const [privacy, setPrivacy] = useState(false);
   const [showModal, setShowModal] = useState(false);
-  // const [error,setError]= useState("")
+  const [error,setError]= useState("")
   // console.log({privacy,topic,email,selectedOption,size});
   useEffect(() => {
     // Define your API endpoint URL, BASE_URL is defined in next.config.js
@@ -46,7 +46,7 @@ function RegisterPage() {
       }
     } catch (error) {
       console.log("here is ", error);
-      // setError(error.message)
+      setError(error.error.message)
     }
   }
   const handleSubmit = async (e) => {

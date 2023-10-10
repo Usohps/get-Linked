@@ -5,11 +5,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { AiOutlineClose } from "react-icons/ai";
-function Nav() {
+function Nav(props) {
   const [navbar, setNavbar] = useState(false);
   return (
     <>
-      <nav className=" flex w-full fixed top-0 left-0 shadow-2xl z-[20] justify-between items-center p-8 text-white">
+      <nav 
+      style={{
+        backgroundColor: props.backgroundColor
+      }} className=" flex w-full fixed top-0 left-0 shadow-2xl z-[20] justify-between items-center p-8 text-white">
         <div className="w-1/3">
           <Image src={Logo} alt="logo" placeholder="blur" className="w-[100px]" />
         </div>
